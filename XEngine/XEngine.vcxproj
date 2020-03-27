@@ -84,8 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>E:\Users\Utente\source\repos\XEngine\XEngine\OpenGL\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\Users\Utente\source\repos\XEngine\XEngine\OpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)\OpenGL\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\OpenGL\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -151,7 +151,12 @@
     <ClCompile Include="Program.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Program.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Shaders\Fragment\shader.fragshad" />
+    <None Include="Data\Shaders\Vertex\shader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
