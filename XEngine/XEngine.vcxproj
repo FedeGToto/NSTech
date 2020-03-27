@@ -155,8 +155,12 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Shaders\Fragment\shader.fragshad" />
-    <None Include="Data\Shaders\Vertex\shader.vs" />
+    <None Include="Data\Shaders\Fragment\shader.fragshad">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Data\Shaders\Vertex\shader.vs">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
