@@ -1,5 +1,5 @@
-# X Engine
-X Engine is a 3D game engine developed by Nameless Studio Research Lab
+# NS Tech
+NS Tecj is a 3D game engine developed by Nameless Studio Research Lab
 
 ### Distribute executables
 1. Edit everything you want in Data folder
